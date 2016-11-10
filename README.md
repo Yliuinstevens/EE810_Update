@@ -2,7 +2,7 @@ This repository is for the update part of EE810 Canvas group
 
 In update section,
 we use libcurl lib https://curl.haxx.se/ and JosephP91/curlcpp lib https://github.com/JosephP91/curlcpp 
-This two lib is use to connect with Canvas API and use the api to operate the data.
+This two libs is used to connect with Canvas API, and we use the api to update the data to Canvas.
 
 The use in project 
 
