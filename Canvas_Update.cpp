@@ -55,7 +55,7 @@ Canvas_Update::writeRequest(grade_info *gradeList,int Post_size)
 {
 	for (int i = 0; i < Post_size; ++i)
 	{
-			curl_easy easy;
+	    curl_easy easy;
             curl_header header;
             curl_form form;
             // Add some options.
