@@ -4,9 +4,9 @@ In update section,
 we use libcurl lib https://curl.haxx.se/ and JosephP91/curlcpp lib https://github.com/JosephP91/curlcpp 
 This two libs is used to connect with Canvas API, and we use the api to update the data to Canvas.
 
-The use in project 
+The libcurl use in project 
 
-        //this is a function to post the assignment on Canvas, and we are going to make a package above this function
+        //this is a function to post the assignment on Canvas, and we are going to make a similar package above this function
         //but we still meet some problem in this function
         #include <iostream>
         #include <string>
