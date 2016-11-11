@@ -23,8 +23,8 @@ struct grade_info //define the single submission grades struct
 	//string media_comment_id//add an audio/video comment to the submission. media comments can be added via this api
 	//string media_comment_type//type of media comment being added.allow audio, video
 	//int	   comment_file_ids//Attach files to this comment that were previously uploaded using the Submission Comment API's files action
-	string visibility//Whether this assignment is visible to the owner of the submission
-	string posted_grade//the grade of the submission
+	string visibility;//Whether this assignment is visible to the owner of the submission
+	string posted_grade;//the grade of the submission
 	bool   excuse;//Sets the “excused” status of an assignment.
 };
 
@@ -43,8 +43,8 @@ private:
 	int Post_size;
 public:
 	Canvas_Update(char *greads_file_dir,int courseId,int AssignmentsId, string auth,int Post_size);//construction function
+	string convertData(grade_info oneGrade);
 	void getGradeInfo(*greads_file_dir);//convert the grades data into json 
 	void writeRequest(grade_info *gradeList,int Post_size);//write the request
-	bool sendRequest(string auth, string update_Api);//send the request to Canvas
 };
 
